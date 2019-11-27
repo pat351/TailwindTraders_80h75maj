@@ -60,6 +60,16 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
+    <BuildIpa>true</BuildIpa>
+    <IpaMetadata>
+    </IpaMetadata>
+    <IpaIncludeArtwork>false</IpaIncludeArtwork>
+    <IpaPackageName>MYIPA</IpaPackageName>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignProvision />
+    <CodesignExtraArgs />
+    <CodesignResourceRules />
+    <CodesignEntitlements />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'UITEST|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -85,6 +95,9 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Features\Scanning\Photo\GalleryService.cs" />
